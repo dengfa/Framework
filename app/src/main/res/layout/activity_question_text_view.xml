@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hyena.framework.QuestionTextViewActivity">
+
+    <com.knowbox.base.coretext.QuestionTextView
+        android:id="@+id/qtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_question_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_select_item1"
+            layout="@layout/layout_question_item_select"
+            android:visibility="gone"></include>
+
+        <include
+            android:id="@+id/include_select_item2"
+            layout="@layout/layout_question_item_select"
+            android:visibility="gone"></include>
+
+        <include
+            android:id="@+id/include_select_item3"
+            layout="@layout/layout_question_item_select"
+            android:visibility="gone"></include>
+
+        <include
+            android:id="@+id/include_select_item4"
+            layout="@layout/layout_question_item_select"
+            android:visibility="gone"></include>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
